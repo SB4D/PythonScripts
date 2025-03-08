@@ -6,13 +6,15 @@ Language: Python 3.13.1
 
 Description:
 The goal is to mimic the behavior of speeding up music on vinyl or tape 
-where tempo and pitch change simultaneously. This is achieved by copying a 
-given WAV file sample by sample and only changing the sample rate.
-The new file will than play back the same material as the old file at a
+which changes tempo and pitch simultaneously. This is achieved by copying 
+a given WAV file sample by sample while changing the sample rate.
+The new file will play back the same material as the old file at a
 higher or lower tempo depending on old and new sample rates.
 For example, if the sample rate changes from 48.000 Hz to 50.400 Hz, the
 tempo and pitch change by a factor of 50.400/48.000 = 1.05.
 The effect is the same a setting the pitch adjustment on a turtable to +5%.
+Unlike the time stretch and pitch shifting features in modern DAWs, 
+the algorithm is non-destructive and completely reversible.
 
 Instructions:
 The script requires the installation of a python interpreter and the wave
